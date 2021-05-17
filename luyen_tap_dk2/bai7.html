@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =+prompt('nhập a')
+    let b =+prompt('nhập b')
+    let c =+prompt('nhập c')
+    let denta = (b*b)-(4*a*c)
+    if (a==0){
+        if (b==0){
+            if (c==0){
+                alert('pt vô số nghiệm')
+            }else {
+                alert('pt vô nghiệm')
+            }
+        }else {
+            alert('pt có nghiệm X= '-c/b)
+        }
+    }else {
+        if (denta>0){
+            X1 = (-b-Math.sqrt(denta))/2*a;
+            X2 = (-b+Math.sqrt(denta))/2*a;
+            alert('pt có 2 ngiệm phân biệt')
+            document.write('X1='+X1 +'<br>'+'X2='+X2)
+        }else if (denta==0){
+            X= -b/(2*a)
+            alert('pt có 1 nghiệm kép')
+            document.write('X= '+X)
+        }else {
+            alert('pt vô nghiệm')
+        }
+    }
+</script>
+</body>
+</html>
